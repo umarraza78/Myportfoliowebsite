@@ -1,0 +1,14 @@
+{
+  "name": "portfolionew",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "start:client": "cd client && npm start",
+    "start:server": "cd server && npm start",
+    "install-all": "npm install"
+  }
+}
