@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { projectsData } from '../data/projects';
-import { FaArrowLeft, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaArrowLeft, FaExternalLinkAlt, FaFilePdf } from 'react-icons/fa';
 
 const ProjectDetail = () => {
   const { id } = useParams();
@@ -40,7 +40,7 @@ const ProjectDetail = () => {
               className="project-video"
             />
           ) : (
-            <img src={project.image} alt={project.title} className="project-img-large" />
+            <img src={project.detailImage || project.image} alt={project.title} className="project-img-large" />
           )}
         </div>
 
@@ -51,9 +51,20 @@ const ProjectDetail = () => {
               <p key={index}>{line}</p>
             ))}
             
-            {project.link !== "#" && (
+            {project.link && project.link !== "#" && (
               <a href={project.link} target="_blank" rel="noreferrer" className="btn project-link-btn">
                 View Repository <FaExternalLinkAlt style={{marginLeft: '8px'}} />
+              </a>
+            )}
+
+            {project.reportPdf && (
+              <a
+                href={project.reportPdf}
+                target="_blank"
+                rel="noreferrer"
+                className="btn project-link-btn project-pdf-btn"
+              >
+                View Full Report <FaFilePdf style={{marginLeft: '8px'}} />
               </a>
             )}
           </div>

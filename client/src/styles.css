@@ -1059,6 +1059,15 @@ section {
     margin-top: 2rem;
 }
 
+.project-pdf-btn {
+    background: #e53935;
+    margin-left: 1rem;
+}
+
+.project-pdf-btn:hover {
+    box-shadow: 0 0 20px rgba(229, 57, 53, 0.7);
+}
+
 .tech-tags {
     display: flex;
     flex-wrap: wrap;

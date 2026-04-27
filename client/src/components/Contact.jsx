@@ -10,17 +10,25 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 3000);
       const response = await fetch('http://localhost:5000/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
+        signal: controller.signal,
       });
+      clearTimeout(timeoutId);
       if (response.ok) {
         alert("Message sent!");
         setFormData({ name: '', email: '', message: '' });
       }
     } catch (error) {
-      console.error("Error submitting form", error);
+      // Server not available — fall back to mailto
+      const { name, email, message } = formData;
+      const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+      window.location.href = `mailto:umarraza78@gmail.com?subject=${subject}&body=${body}`;
     }
   };
 
