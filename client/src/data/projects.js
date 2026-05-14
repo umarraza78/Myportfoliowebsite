@@ -3,21 +3,11 @@ export const projectsData = [
     id: "steadybit-resilience-engineering",
     title: "Steadybit Resilience Engineering",
     shortDesc: "Automated resilience testing and chaos engineering for distributed systems.",
-    fullDesc: "An advanced implementation of resilience engineering using Steadybit. This project focuses on identifying system weaknesses through automated chaos experiments and establishing a robust monitoring framework for distributed architectures.\n\nKey Highlights:\n- Automated Chaos Experiments: Testing system behavior under various failure scenarios.\n- System Weakness Identification: Proactive discovery of potential failure points.\n- Monitoring Framework: Integrated dashboard for real-time resilience metrics.\n- Distributed System Reliability: Ensuring high availability across cloud environments.",
+    fullDesc: "An advanced implementation of resilience engineering using Steadybit. This project focuses on identifying system weaknesses through automated chaos experiments and establishing a robust monitoring framework for distributed architectures.\n\nKey Highlights:\n- Real-time Service Risk Monitoring: Visualizes team service risk with dynamic gauges.\n- Automated Target Discovery: Automatically identifies hosts and environments (e.g., Windows Hosts, Global environments).\n- Chaos Experiment Management: Interface for creating and executing resilience experiments.\n- High-Risk Alerting: Instant visibility into high-risk components like the 'Online Shop' service.\n- Distributed System Reliability: Ensuring high availability across cloud environments.",
     image: "/steady.png",
     video: "/project.mp4",
     link: "https://github.com/umarraza78/Chaos-Engineering-project.git",
     techStack: ["Steadybit", "Chaos Engineering", "Resilience", "AWS", "DevOps"]
-  },
-  {
-    id: "steadybit-resilience-dashboard",
-    title: "Steadybit Resilience Dashboard",
-    shortDesc: "Real-time resilience engineering and chaos experiment management platform.",
-    fullDesc: "A high-performance dashboard built to monitor and manage system resilience using Steadybit. This project focuses on automated target discovery, risk assessment, and chaos engineering experiments to ensure system reliability under stress.\n\nKey Features:\n- Real-time Service Risk Monitoring: Visualizes team service risk with dynamic gauges.\n- Automated Target Discovery: Automatically identifies hosts and environments (e.g., Windows Hosts, Global environments).\n- Chaos Experiment Management: Interface for creating and executing resilience experiments.\n- High-Risk Alerting: Instant visibility into high-risk components like the 'Online Shop' service.",
-    image: "/steadybit.png",
-    video: "/project.mp4",
-    link: "https://github.com/umarraza78/",
-    techStack: ["Steadybit", "Chaos Engineering", "Resilience", "Dashboard", "AWS"]
   },
   {
     id: "cicd-task1-jenkins-setup",
