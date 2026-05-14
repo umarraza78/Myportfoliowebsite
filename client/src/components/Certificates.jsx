@@ -7,6 +7,7 @@ const certificatesData = [
   { id: 3, title: 'Professional Certification 3', image: '/c3.png' },
   { id: 4, title: 'Professional Certification 4', image: '/c4.png' },
   { id: 5, title: 'Professional Certification 5', image: '/c5.png' },
+  { id: 6, title: 'Professional Certification 6', image: '/newc.jpeg' },
 ];
 
 const Certificates = () => {
