@@ -1,5 +1,15 @@
 export const projectsData = [
   {
+    id: "steadybit-resilience-dashboard",
+    title: "Steadybit Resilience Dashboard",
+    shortDesc: "Real-time resilience engineering and chaos experiment management platform.",
+    fullDesc: "A high-performance dashboard built to monitor and manage system resilience using Steadybit. This project focuses on automated target discovery, risk assessment, and chaos engineering experiments to ensure system reliability under stress.\n\nKey Features:\n- Real-time Service Risk Monitoring: Visualizes team service risk with dynamic gauges.\n- Automated Target Discovery: Automatically identifies hosts and environments (e.g., Windows Hosts, Global environments).\n- Chaos Experiment Management: Interface for creating and executing resilience experiments.\n- High-Risk Alerting: Instant visibility into high-risk components like the 'Online Shop' service.",
+    image: "/steadybit.png",
+    video: "/project.mp4",
+    link: "https://github.com/umarraza78/",
+    techStack: ["Steadybit", "Chaos Engineering", "Resilience", "Dashboard", "AWS"]
+  },
+  {
     id: "cicd-task1-jenkins-setup",
     title: "Jenkins Installation & Configuration",
     shortDesc: "Provisioned an EC2 Jenkins controller + private agent via Terraform, configured required plugins, credentials, and a sanity-check pipeline on the linux-agent.",
