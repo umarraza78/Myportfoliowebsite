@@ -5,8 +5,8 @@ export const projectsData = [
     shortDesc: "Automated resilience testing and chaos engineering for distributed systems.",
     fullDesc: "An advanced implementation of resilience engineering using Steadybit. This project focuses on identifying system weaknesses through automated chaos experiments and establishing a robust monitoring framework for distributed architectures.\n\nKey Highlights:\n- Automated Chaos Experiments: Testing system behavior under various failure scenarios.\n- System Weakness Identification: Proactive discovery of potential failure points.\n- Monitoring Framework: Integrated dashboard for real-time resilience metrics.\n- Distributed System Reliability: Ensuring high availability across cloud environments.",
     image: "/steady.png",
-    video: null,
-    link: "https://github.com/umarraza78/",
+    video: "/project.mp4",
+    link: "https://github.com/umarraza78/Chaos-Engineering-project.git",
     techStack: ["Steadybit", "Chaos Engineering", "Resilience", "AWS", "DevOps"]
   },
   {
